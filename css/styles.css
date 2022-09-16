@@ -1,0 +1,157 @@
+body{
+  position: relative;
+  top:0;
+  left:0;
+  background-color: #181818;
+}
+.aung {
+  position: relative;
+  height: 100px;
+  margin: 20px 20px 0 50px;
+  opacity: 0.5;
+}
+.showCase{
+  position: relative;
+  padding-top: 50px;
+  top:0;
+  left:0;
+
+}
+.question-container, .mainContainer {
+  position: relative;
+  display: inline-block;
+}
+.question-container{
+  padding: 0 50px 50px 50px;
+  width: 20%;
+
+}
+.question {
+  margin: 20px;
+
+}
+.spark {
+  height:20px;
+  animation: ignition 1s;
+}
+.question:hover {
+
+  color: blue;
+  cursor: pointer;
+}
+
+.clicker:hover{
+  cursor: pointer;
+}
+.mainContainer{
+  position: relative;
+  left: 5%;
+
+}
+
+.container1{
+  position: absolute;
+  height: 500px;
+  width: 350px;
+  bottom:-35px;
+background-image: url("../images/model.PNG");
+background-repeat: no-repeat;
+background-size:cover;
+}
+.container2{
+  position: absolute;
+  height: 500px;
+  width: 350px;
+  bottom:-35px;
+  background-color: "";
+}
+.clicker {
+  height: 50px;
+  width:60px;
+  margin:0;
+  border:none;
+  display:inline-block;
+  opacity: 0;
+}
+#dancePar {
+  position: absolute;
+  width: 450px;
+  height: 350px;
+  right: 30px;
+  top: 50px;
+}
+.number{
+  visibility: hidden;
+}
+@-webkit-keyframes run {
+  0% {
+  transform: scaleX(-1);
+  }
+  100% {
+  transform: scaleX(1);
+  }
+}
+@-webkit-keyframes blinker {
+  10% {
+    opacity: 0;
+  }
+  20%{
+    opacity:1;
+  }
+  40%{
+    opacity:0;
+  }
+  60%{
+    opacity:1;
+  }
+  80%{
+    opacity:0;
+  }
+  90%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes ignition {
+  0%{
+    transform: scale(0)
+  }
+  100%{
+  transform: scale(5)
+  }
+}
+@media (max-width:600px){
+  .showCase{
+    margin-top: 70px;
+    padding-top: 0;
+  }
+  .question{
+    margin: 5px;
+  }
+  .question-container{
+    top: 10px;
+    padding: 0 0 20px 20px;
+  }
+  .data {
+    font-size: 12px;
+  }
+
+  .mainContainer{
+    left: 7px;
+    top: 20px;
+  }
+  #dancePar {
+    width: 450px;
+    height: 350px;
+    right: 10px;
+    top: 20px;
+    z-index: 1;
+  }
+  .aung {
+    height: 80px;
+    margin: 10px 0 0 10px;
+  }
+}

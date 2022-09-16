@@ -71,7 +71,7 @@ background-size:cover;
   margin:0;
   border:none;
   display:inline-block;
-  opacity: 0.2;
+  opacity: 0;
 }
 #dancePar {
   position: absolute;
@@ -81,7 +81,7 @@ background-size:cover;
   top: 50px;
 }
 .number{
-  visibility: visible;
+  visibility: hidden;
 }
 @-webkit-keyframes run {
   0% {
@@ -123,21 +123,20 @@ background-size:cover;
   }
   .question{
     margin: 5px;
+    display: inline-block;
   }
   .question-container{
     top: 10px;
     padding: 0;
   }
-  .container1, .container2 {
 
-  }
   .data {
     font-size: 12px;
   }
 
   .mainContainer{
     left: 7px;
-    top: 20px;
+    bottom: 100px;
   }
   #dancePar {
     width: 450px;
